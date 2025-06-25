@@ -1,0 +1,8 @@
+services:
+  recruit:
+    build:
+      context: ./java
+    volumes:
+      - ./java:/app
+    command: ["mvn", "test"]
+    tty: true
